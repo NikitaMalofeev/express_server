@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express server</title>
+
+    <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body>
+
+    <div class="container mx-auto">
+        <h1 class="text-center text-4xl text-indigo-400 py-12">Express server</h1>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase trackin-wider">Employee</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase trackin-wider">Status</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase trackin-wider">Role</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200" id="tbody">
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 h-10 w-10">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkartinkin.net%2F99935-kartinka-ofisnogo-rabotnika.html&psig=AOvVaw3MHzoNlXbcgB6nuZQF9Js1&ust=1686332712023000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiG9IOdtP8CFQAAAAAdAAAAABAE" class="h-10 w-10 rounded-full" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <div class="text-sm font-medium text-gray-200">
+                                    Nikita Malofeev
+                                </div>
+                                <div class="text-sm text-gray-500">
+                                    nikita.m.edu@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                            Active
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <span class="text-sm text-gray-500">frontend-react</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <span></span>
+        <input placeholder="Введите задачу для работника" class="px-15 text-xs" id="form_input" >
+        <button class="px-20 bg-green-300 text-white-800 mt-20 ml-20" id="button">Сохранить</button>
+    </div>
+    <script src="/src/backend/express.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
